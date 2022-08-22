@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/productModal.css" />
 </head>
 <body>
 <header class="header">
     <div class="header__wrap">
         <div class="header__wrap-top mobile__nav">
-            <a href="" class="header__nav-city">Воронеж</a>
-            <nav class="header__nav mobile__nav-field">
-                <a class="header__nav-item">Каталог</a>
-                <a href="" class="header__nav-item">Акции</a>
-                <a href="" class="header__nav-item">Оптовым покупателям</a>
-                <a href="" class="header__nav-item">Монтаж и сервис</a>
-                <a href="" class="header__nav-item">Гарантии</a>
-                <a href="" class="header__nav-item">О компании</a>
-            </nav>
+            <div class="header--city">
+                <a href="" class="header__nav-city">Воронеж</a>
+                <nav class="header__nav mobile__nav-field">
+                    <a class="header__nav-item">Каталог</a>
+                    <a href="" class="header__nav-item">Акции</a>
+                    <a href="" class="header__nav-item">Оптовым покупателям</a>
+                    <a href="" class="header__nav-item">Монтаж и сервис</a>
+                    <a href="" class="header__nav-item">Гарантии</a>
+                    <a href="" class="header__nav-item">О компании</a>
+                </nav>
+            </div>
             <div class="header__social">
                 <div class="header__social-left">
                     <a href="https://vk.com/" target="_blank" class="header__social-link">
@@ -108,7 +112,7 @@
                     <p class="header__buttons-item--text">20 000 000 ₽</p>
                 </div>
             </div>
-            <img src="img/search_icon.svg" alt="" class="header__search-icon mobile__search">
+            <a class="mobile__phone-link" href="tel: +7 (473) 280-23-23"><i class="header__social-phone--icon mobile__phone icon-phone-ico"></i></a>
         </div>
     </div>
 </header>
@@ -382,16 +386,54 @@
                         <p class="products__item-col--status status--ok">В наличии</p>
                         <div class="products__item-col--change">
                             <img src="img/minus.svg" alt="" class="col__change-minus">
-                            <input type="number" class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                            <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
                             <img src="img/plus.svg" alt="" class="col__change-plus">
                         </div>
                     </div>
                     <p class="products__item-price">250 000 ₽</p>
                     <div class="products__item-buttons">
                         <a class="products__item-buttons--buy">Купить</a>
-                        <a class="products__item-buttons--click">В 1 клик</a>
+                        <a href="#product--modal" rel="modal:open" class="products__item-buttons--click">В 1 клик</a>
                     </div>
                     <p class="products__item-status top">ТОП продаж</p>
+                    <div id="product--modal">
+                        <a href="" rel="modal:close" class="product--modal--close">
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <form class="product__click">
+                            <p class="product__click-title">Купить в один клик</p>
+                            <div class="product__click-item">
+                                <img src="img/icecube.png" alt="Фото - название товара" class="product__click-item--image">
+                                <div class="product__click-item--info">
+                                    <p class="products__item-name products__click-item--name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                                    <div class="products__item-info--item">
+                                        <p class="info__item-set">Бренд:</p>
+                                        <p class="info__item-value">ACV</p>
+                                    </div>
+                                    <div class="products__item-info--item">
+                                        <p class="info__item-set">Мощность (кВт):</p>
+                                        <p class="info__item-value">90.5</p>
+                                    </div>
+                                    <div class="products__item-info--item">
+                                        <p class="info__item-set">Тип установки:</p>
+                                        <p class="info__item-value">напольный</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__click-item--price">
+                                <p class="click__price-col">Количество: <span class="price__col-thin">1</span></p>
+                                <p class="click__prive-value">Общая стоимость: <span class="price__col-thin">250 000 ₽</span></p>
+                            </div>
+                            <div class="product__click-top">
+                                <input type="text" class="product__click-top--input" placeholder="Имя">
+                                <input type="text" class="product__click-top--input" placeholder="E-mail">
+                                <input type="text" class="product__click-top--input" placeholder="Телефон">
+                            </div>
+                            <textarea name="" id="" cols="20" rows="5" class="product__click-top--input" placeholder="Дополнительная информация"></textarea>
+                            <button class="product__click-button" type="submit">Купить</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="products__item">
                     <a href="" title="Подробнее о товаре" class="products__item-full">
@@ -674,19 +716,19 @@
                 <p class="products__info-text--desc">В основе деятельности Инженер-комплект лежит комплексный подход, направленный на оказание наиболее полного спектра услуг для заказчика. Мы не просто предлагаем к продаже оборудование, мы обеспечиваем грамотный выбор систем отопления, водоснабжения, канализации с учетом особенностей того или иного объекта, будь то промышленное здание, многоквартирный дом или котедж.</p>
             </div>
             <div class="products__pluses-items">
-                <div class="pluses__item">
+                <div class="pluses__item wow animate__animated animate__bounceInUp">
                     <img src="img/quality.png" alt="" class="pluses__item-image">
                     <p class="pluses__item-text">Качественные материалы</p>
                 </div>
-                <div class="pluses__item">
+                <div class="pluses__item wow animate__animated animate__bounceInUp">
                     <img src="img/guys.png" alt="" class="pluses__item-image">
                     <p class="pluses__item-text">Профессиональная команда</p>
                 </div>
-                <div class="pluses__item">
+                <div class="pluses__item wow animate__animated animate__bounceInUp">
                     <img src="img/bag.png" alt="" class="pluses__item-image">
                     <p class="pluses__item-text">Комплексный подход</p>
                 </div>
-                <div class="pluses__item">
+                <div class="pluses__item wow animate__animated animate__bounceInUp">
                     <img src="img/guard.png" alt="" class="pluses__item-image">
                     <p class="pluses__item-text">Надежная система</p>
                 </div>
@@ -711,8 +753,49 @@
                     <a href="" class="footer__icons-item">
                         <i class="footer__icons-item--icon icon-telegram-svgrepo-com-1"></i>
                     </a>
-                    <a href="" class="footer__icons-item">
-                        <i class="footer__icons-item--icon icon-vk"></i>
+                    <a href="" class="footer__icons-whatsapp">
+                        <svg class="footer__icons-whatsapp--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+    <g>
+        <path d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5
+            S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z"/>
+        <path d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42
+            c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242
+            c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169
+            c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097
+            c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z"/>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+                            <g>
+    </g>
+    </svg>
                     </a>
                     <a href="" class="footer__icons-item">
                         <i class="footer__icons-item--icon icon-maill2"></i>
@@ -756,11 +839,16 @@
     </div>
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/burger.js"></script>
 <script src="js/header.js"></script>
 <script src="js/catalog.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/products.js"></script>
+<script>
+    new WOW().init()
+</script>
 </body>
 </html>
