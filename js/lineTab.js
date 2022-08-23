@@ -10,4 +10,26 @@ $('.sort__buttons-list').click(() => {
     $('.products__item-col--change').addClass('products__item-col--change--line')
     $('.col__price').addClass('col__price-line')
     $('.products__item-price').addClass('products__item-price--line')
+    $('.products__item-buttons').addClass('products__item-buttons--line')
+    $('.products__item-info--item').addClass('products__item-info--item--line')
+})
+
+$('.sort__buttons-block').click(() => {
+    $('.products__field-items').removeClass('products__field-items--line')
+    $('.products__item').removeClass('products__item-line')
+    $('.products__item-full').removeClass('products__item-full--list')
+    $('.products__image-field').removeClass('products__image-field--line')
+    $('.product--link').removeClass('product--link--line')
+    $('.products__item-name').removeClass('products__item-name--line')
+    $('.products__bots').removeClass('products__bots-line')
+    $('.products__item-col--status').removeClass('products__item-col--status--line')
+    $('.products__item-col--change').removeClass('products__item-col--change--line')
+    $('.col__price').removeClass('col__price-line')
+    $('.products__item-price').removeClass('products__item-price--line')
+    $('.products__item-buttons').removeClass('products__item-buttons--line')
+    $('.products__item-info--item').removeClass('products__item-info--item--line')
+})
+
+$('.sort--change').click(function () {
+    $(this).addClass('sort__buttons-active').siblings().removeClass('sort__buttons-active')
 })

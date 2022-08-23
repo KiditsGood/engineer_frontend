@@ -1384,6 +1384,7 @@ label:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 177px;
 }
 .products__item-name--line{
     max-width: 450px;
@@ -1430,10 +1431,35 @@ label:hover{
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 1435px){
+@media screen and (max-width: 1470px){
     .products__field-items{
         gap: 0;
         justify-content: space-between;
+    }
+    .products__item-buttons--click{
+        width: 110px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .products__item-full--list{
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .products__item-full--list{
+        gap: 10px;
+    }
+    .products__image-field--line{
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
+    }
+    .products__item-info--item--line{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products__bots-line{
+        margin-top: 130px;
     }
 }
 @media screen and (min-width: 1000px) and (max-width: 1480px){
@@ -1866,6 +1892,21 @@ label:hover{
         width: 103px;
     }
     .products__filter-hidden{
+        width: 100%;
+    }
+    .products__field-sort--buttons{
+        display: none;
+    }
+    .sort__input-text{
+        display: none;
+    }
+    .sort__input-field{
+        width: 100%;
+    }
+    .products__field-sort--input{
+        width: 100%;
+    }
+    .sort--toggle{
         width: 100%;
     }
 }
