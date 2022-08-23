@@ -11,9 +11,9 @@ $('.col__change-number').each(function () {
             currentValue.val(counter)
         }
         else {
-            counter -= 1
+            counter = parseInt(currentValue.val())
 
-            currentValue.val(counter)
+            currentValue.val(counter - 1)
         }
     })
 
@@ -24,9 +24,9 @@ $('.col__change-number').each(function () {
             currentValue.val(counter)
         }
         else {
-            counter += 1
+            counter = parseInt(currentValue.val())
 
-            currentValue.val(counter)
+            currentValue.val(counter + 1)
         }
     })
 })
