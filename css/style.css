@@ -799,7 +799,6 @@ input::-webkit-inner-spin-button {
     align-items: center;
     justify-content: center;
     transition: 0.2s;
-    border-radius: 10px;
 }
 .products__cat-item:hover{
     background: #FB9529;
@@ -1146,7 +1145,6 @@ input::-webkit-inner-spin-button {
     gap: 3px;
     max-width: 23px;
     padding: 10px;
-    border-radius: 10px;
     transition: 0.2s;
 }
 .sort__buttons-list--left{
@@ -1164,7 +1162,6 @@ input::-webkit-inner-spin-button {
 .sort__buttons-list--right span{
     width: 10px;
     height: 2px;
-    border-radius: 2px;
     background: #F0F0FA;
     position: relative;
     margin-top: -5px;
@@ -1174,7 +1171,6 @@ input::-webkit-inner-spin-button {
     position: absolute;
     width: 8px;
     height: 2px;
-    border-radius: 2px;
     background: #F0F0FA;
     top: 3px;
 }
@@ -1194,7 +1190,6 @@ input::-webkit-inner-spin-button {
     background: #676A76;
     width: 10px;
     height: 10px;
-    border-radius: 3px;
 }
 .sort__buttons-active > span, .sort__buttons-active > .sort__buttons-list--left > span{
     background: white;
