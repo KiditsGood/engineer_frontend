@@ -7,5 +7,6 @@
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="noUiSlider" level="application" />
     <orderEntry type="library" name="jquery-modal" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
   </component>
 </module>

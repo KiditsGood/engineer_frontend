@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/productModal.css" />
+    <link rel="stylesheet" href="css/noUiSlider.css">
+    <link rel="stylesheet" href="css/productModal.css">
 </head>
 <body>
 <header class="header">
@@ -317,132 +317,215 @@
             <p class="catalog__item-text">Электрический теплый пол, греющий кабель</p>
         </a>
     </section>
-    <section class="products">
-        <div class="products__slider owl-carousel owl-theme">
-            <div class="products__slider-field owl-stage-outer">
-                <div class="owl-stage">
-                    <div class="slider--item owl-item">
-                        <picture>
-                            <source srcset="img/slider_back_sm.png" media="(max-width: 449px)">
-                            <source srcset="img/slider_back_md.png" media="(max-width: 599px)">
-                            <source srcset="img/slider_back_lg.png" media="(max-width: 999px)">
-                            <source srcset="img/slider_back_xl.png" media="(max-width:1300px)">
-                            <img src="img/slider_back.png" alt="" class="products__slider-image">
-                        </picture>
-<!--                        <p class="products__slider-main">Мы открылись!</p>-->
-<!--                        <p class="products__slider-address">Воронеж, ул. Ломоносова, д. 117, помещение 15</p>-->
-<!--                        <p class="products__slider-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>-->
+    <section class="card">
+        <div class="crumbs">
+            <a href="index.html" class="crumbs__item">Главная</a>
+            <p class="crumbs__slash">/</p>
+            <a href="catalog.html" class="crumbs__item">Котельное оборудование</a>
+            <p class="crumbs__slash">/</p>
+            <a href="catalog.html" class="crumbs__item">Газовые котлы</a>
+            <p class="crumbs__slash">/</p>
+            <a href="catalog.html" class="crumbs__item crumbs__current">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</a>
+        </div>
+        <div class="card__field">
+            <h1 class="card__field-title">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</h1>
+            <div class="card__field-product">
+                <div class="card__field-product--images">
+                    <div class="card__main">
+                        <img src="img/boilers.jpg" alt="" class="card__main-image">
                     </div>
-                    <div class="slider--item owl-item">
-                        <picture>
-                            <source srcset="img/slider_back_sm.png" media="(max-width: 449px)">
-                            <source srcset="img/slider_back_md.png" media="(max-width: 599px)">
-                            <source srcset="img/slider_back_lg.png" media="(max-width: 999px)">
-                            <source srcset="img/slider_back_xl.png" media="(max-width:1300px)">
-                            <img src="img/slider_back.png" alt="" class="products__slider-image">
-                        </picture>
-<!--                        <p class="products__slider-main">Мы открылись!</p>-->
-<!--                        <p class="products__slider-address">Воронеж, ул. Ломоносова, д. 117, помещение 15</p>-->
-<!--                        <p class="products__slider-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>-->
+                    <div class="card__pseudo">
+                        <a class="card__pseudo-icon">
+                            <i class="card__pseudo-left icon--1"></i>
+                        </a>
+                        <div class="card__pseudo-images">
+                            <img src="img/boilers.jpg" alt="" class="card__pseudo-images--item">
+                            <img src="" alt="" class="card__pseudo-images--item">
+                            <img src="" alt="" class="card__pseudo-images--item">
+                            <img src="" alt="" class="card__pseudo-images--item">
+                            <img src="" alt="" class="card__pseudo-images--item">
+                        </div>
+                        <a class="card__pseudo-icon">
+                            <i class="card__pseudo-right icon--1"></i>
+                        </a>
                     </div>
-                    <div class="slider--item owl-item">
-                        <picture>
-                            <source srcset="img/slider_back_sm.png" media="(max-width: 449px)">
-                            <source srcset="img/slider_back_md.png" media="(max-width: 599px)">
-                            <source srcset="img/slider_back_lg.png" media="(max-width: 999px)">
-                            <source srcset="img/slider_back_xl.png" media="(max-width:1300px)">
-                            <img src="img/slider_back.png" alt="" class="products__slider-image">
-                        </picture>
-<!--                        <p class="products__slider-main">Мы открылись!</p>-->
-<!--                        <p class="products__slider-address">Воронеж, ул. Ломоносова, д. 117, помещение 15</p>-->
-<!--                        <p class="products__slider-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>-->
+                </div>
+                <div class="card__field-product--info">
+                    <div class="card__options">
+                        <div class="card__options-item">
+                            <p class="card__options-item--name">Бренд:</p>
+                            <p class="card__options-item--value">ACV</p>
+                        </div>
+                        <div class="card__options-item">
+                            <p class="card__options-item--name">Мощность (кВт):</p>
+                            <p class="card__options-item--value">90.5</p>
+                        </div>
+                        <div class="card__options-item">
+                            <p class="card__options-item--name">Тип установки:</p>
+                            <p class="card__options-item--value">напольный</p>
+                        </div>
+                        <div class="card__options-item">
+                            <p class="card__options-item--name">Камера сгорания:</p>
+                            <p class="card__options-item--value">открытая</p>
+                        </div>
+                        <div class="card__options-item">
+                            <p class="card__options-item--name">Количество контуров:</p>
+                            <p class="card__options-item--value">1</p>
+                        </div>
+                    </div>
+                    <div class="card__firm">
+                        <p class="products__item-col--status status--ok">В наличии</p>
+                        <img src="img/" alt="" class="card__firm-img">
+                    </div>
+                    <div class="card__buy">
+                        <div class="card__buy-col">
+                            <div class="col__price card__buy-col--value">
+                                <img src="img/minus.svg" alt="" class="col__change-minus">
+                                <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                                <img src="img/plus.svg" alt="" class="col__change-plus">
+                            </div>
+                            <p class="card__buy-col--price">250 000 ₽</p>
+                        </div>
+                        <div class="card__buy-buttons">
+                            <a class="card__buy-buttons_buy">В корзину</a>
+                            <a class="card__buy-buttons_click">Купить в 1 клик</a>
+                        </div>
+                    </div>
+                    <div class="card__plus">
+                        <div class="card__plus-item">
+                            <img src="img/car.svg" alt="" class="card__plus-item--icon">
+                            <p class="card__plus-item--text">Бесплатная доставка по Воронежу</p>
+                        </div>
+                        <div class="card__plus-item">
+                            <img src="img/factory.svg" alt="" class="card__plus-item--icon">
+                            <p class="card__plus-item--text">Наличие собственного производства</p>
+                        </div>
+                        <div class="card__plus-item">
+                            <img src="img/map.svg" alt="" class="card__plus-item--icon">
+                            <p class="card__plus-item--text">Широкая география работы</p>
+                        </div>
+                        <div class="card__plus-item">
+                            <img src="img/money.svg" alt="" class="card__plus-item--icon">
+                            <p class="card__plus-item--text">Оплатить легко!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="products__field">
-            <h1 class="products__field-title">Оборудование и инженерные системы для отопления, водоснабжения, водоотведения</h1>
-            <div class="products__field-items">
-                <div class="products__item">
-                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
-                        <div class="products__image-field">
-                            <img src="img/icecube.png" alt="Фото - название товара" class="products__item-image">
+        <div class="card__desc">
+            <div class="card__desc-tabs">
+                <p class="card__desc-tabs--item tabs--active">Подробные характеристики</p>
+                <p class="card__desc-tabs--item">Описание</p>
+                <p class="card__desc-tabs--item">Прикрепленые файлы</p>
+            </div>
+            <div class="card__desc-field">
+                <div class="card__desc-field--item">
+                    <p class="field__main">Основные характеристики</p>
+                    <div class="field__grid">
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Продукт</p>
+                            <p class="field__grid-item--value">Котел</p>
                         </div>
-                        <div class="product--link">
-                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                            <div class="products__item-info">
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Бренд:</p>
-                                    <p class="info__item-value">ACV</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Мощность (кВт):</p>
-                                    <p class="info__item-value">90.5</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Тип установки:</p>
-                                    <p class="info__item-value">напольный</p>
-                                </div>
-                            </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Тип</p>
+                            <p class="field__grid-item--value">Традиционный</p>
                         </div>
-                    </a>
-                    <div class="products__bots">
-                        <div class="products__item-col">
-                            <p class="products__item-col--status status--ok">В наличии</p>
-                            <div class="products__item-col--change">
-                                <div class="col__price">
-                                    <img src="img/minus.svg" alt="" class="col__change-minus">
-                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
-                                    <img src="img/plus.svg" alt="" class="col__change-plus">
-                                </div>
-                                <p class="products__item-price">250 000 ₽</p>
-                            </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Способ нагрева</p>
+                            <p class="field__grid-item--value">Газовый</p>
                         </div>
-                        <div class="products__item-buttons">
-                            <a class="products__item-buttons--buy">Купить</a>
-                            <a href="#product--modal" rel="modal:open" class="products__item-buttons--click">В 1 клик</a>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Способ монтажа</p>
+                            <p class="field__grid-item--value">Настенный</p>
                         </div>
-                    </div>
-                    <p class="products__item-status top">ТОП продаж</p>
-                    <div id="product--modal">
-                        <a href="" rel="modal:close" class="product--modal--close">
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <form class="product__click">
-                            <p class="product__click-title">Купить в один клик</p>
-                            <div class="product__click-item">
-                                <img src="img/icecube.png" alt="Фото - название товара" class="product__click-item--image">
-                                <div class="product__click-item--info">
-                                    <p class="products__item-name products__click-item--name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                                    <div class="products__item-info--item">
-                                        <p class="info__item-set">Бренд:</p>
-                                        <p class="info__item-value">ACV</p>
-                                    </div>
-                                    <div class="products__item-info--item">
-                                        <p class="info__item-set">Мощность (кВт):</p>
-                                        <p class="info__item-value">90.5</p>
-                                    </div>
-                                    <div class="products__item-info--item">
-                                        <p class="info__item-set">Тип установки:</p>
-                                        <p class="info__item-value">напольный</p>
-                                    </div>
-                                    <div class="product__click-item--price">
-                                        <p class="click__price-col">Количество: <span class="price__col-thin">1</span></p>
-                                        <p class="click__price-value">Общая стоимость: <span class="price__col-thin">250 000 ₽</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product__click-top">
-                                <input type="text" class="product__click-top--input" placeholder="Имя">
-                                <input type="text" class="product__click-top--input" placeholder="E-mail">
-                                <input type="text" class="product__click-top--input" placeholder="Телефон">
-                            </div>
-                            <textarea name="" id="" cols="20" rows="2" class="product__click-top--input" placeholder="Дополнительная информация"></textarea>
-                            <button class="product__click-button" type="submit">Купить</button>
-                        </form>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Способ установки</p>
+                            <p class="field__grid-item--value">Вертикальный</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Тип газа</p>
+                            <p class="field__grid-item--value">Природный газ</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Тип дымоудаления</p>
+                            <p class="field__grid-item--value">C12-C22-C32-C42-C52-C62-C82-B22-B22p-B32</p>
+                        </div>
                     </div>
                 </div>
+                <div class="card__desc-field--item">
+                    <p class="field__main">Энергетические характеристики</p>
+                    <div class="field__grid">
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                        <div class="field__grid-item">
+                            <p class="field__grid-item--name">Мощность</p>
+                            <p class="field__grid-item--value">24кВт</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card__buys">
+            <p class="card__buys-title">Смотрели раннее</p>
+            <div class="card__buys-products">
                 <div class="products__item">
                     <a href="" title="Подробнее о *Название товара*" class="products__item-full">
                         <div class="products__image-field">
@@ -571,171 +654,7 @@
                 <div class="products__item">
                     <a href="" title="Подробнее о *Название товара*" class="products__item-full">
                         <div class="products__image-field">
-                            <img src="img/boilers.jpg" alt="Фото - название товара" class="products__item-image">
-                        </div>
-                        <div class="product--link">
-                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                            <div class="products__item-info">
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Бренд:</p>
-                                    <p class="info__item-value">ACV</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Мощность (кВт):</p>
-                                    <p class="info__item-value">90.5</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Тип установки:</p>
-                                    <p class="info__item-value">напольный</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="products__bots">
-                        <div class="products__item-col">
-                            <p class="products__item-col--status status--ok">В наличии</p>
-                            <div class="products__item-col--change">
-                                <div class="col__price">
-                                    <img src="img/minus.svg" alt="" class="col__change-minus">
-                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
-                                    <img src="img/plus.svg" alt="" class="col__change-plus">
-                                </div>
-                                <p class="products__item-price">250 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="products__item-buttons">
-                            <a class="products__item-buttons--buy">Купить</a>
-                            <a class="products__item-buttons--click">В 1 клик</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
-                        <div class="products__image-field">
-                            <img src="img/counter.jpg" alt="Фото - название товара" class="products__item-image">
-                        </div>
-                        <div class="product--link">
-                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                            <div class="products__item-info">
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Бренд:</p>
-                                    <p class="info__item-value">ACV</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Мощность (кВт):</p>
-                                    <p class="info__item-value">90.5</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Тип установки:</p>
-                                    <p class="info__item-value">напольный</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="products__bots">
-                        <div class="products__item-col">
-                            <p class="products__item-col--status status--ok">В наличии</p>
-                            <div class="products__item-col--change">
-                                <div class="col__price">
-                                    <img src="img/minus.svg" alt="" class="col__change-minus">
-                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
-                                    <img src="img/plus.svg" alt="" class="col__change-plus">
-                                </div>
-                                <p class="products__item-price">250 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="products__item-buttons">
-                            <a class="products__item-buttons--buy">Купить</a>
-                            <a class="products__item-buttons--click">В 1 клик</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
-                        <div class="products__image-field">
-                            <img src="img/hot_item.jpg" alt="Фото - название товара" class="products__item-image">
-                        </div>
-                        <div class="product--link">
-                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                            <div class="products__item-info">
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Бренд:</p>
-                                    <p class="info__item-value">ACV</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Мощность (кВт):</p>
-                                    <p class="info__item-value">90.5</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Тип установки:</p>
-                                    <p class="info__item-value">напольный</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="products__bots">
-                        <div class="products__item-col">
-                            <p class="products__item-col--status status--ok">В наличии</p>
-                            <div class="products__item-col--change">
-                                <div class="col__price">
-                                    <img src="img/minus.svg" alt="" class="col__change-minus">
-                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
-                                    <img src="img/plus.svg" alt="" class="col__change-plus">
-                                </div>
-                                <p class="products__item-price">250 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="products__item-buttons">
-                            <a class="products__item-buttons--buy">Купить</a>
-                            <a class="products__item-buttons--click">В 1 клик</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
-                        <div class="products__image-field">
-                            <img src="img/cold_frontal.png" alt="Фото - название товара" class="products__item-image">
-                        </div>
-                        <div class="product--link">
-                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                            <div class="products__item-info">
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Бренд:</p>
-                                    <p class="info__item-value">ACV</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Мощность (кВт):</p>
-                                    <p class="info__item-value">90.5</p>
-                                </div>
-                                <div class="products__item-info--item">
-                                    <p class="info__item-set">Тип установки:</p>
-                                    <p class="info__item-value">напольный</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="products__bots">
-                        <div class="products__item-col">
-                            <p class="products__item-col--status status--ok">В наличии</p>
-                            <div class="products__item-col--change">
-                                <div class="col__price">
-                                    <img src="img/minus.svg" alt="" class="col__change-minus">
-                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
-                                    <img src="img/plus.svg" alt="" class="col__change-plus">
-                                </div>
-                                <p class="products__item-price">250 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="products__item-buttons">
-                            <a class="products__item-buttons--buy">Купить</a>
-                            <a class="products__item-buttons--click">В 1 клик</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
-                        <div class="products__image-field">
-                            <img src="img/checks.jpg" alt="Фото - название товара" class="products__item-image">
+                            <img src="img/instrument.jpg" alt="Фото - название товара" class="products__item-image">
                         </div>
                         <div class="product--link">
                             <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
@@ -775,34 +694,174 @@
                 </div>
             </div>
         </div>
-        <div class="products__info">
-            <img src="img/setter.png" alt="" class="products__info-image">
-            <div class="products__info-text">
-                <p class="products__info-text--title">Монтаж и сервис</p>
-                <p class="products__info-text--desc">ООО “Инженер” осуществляет проектирование, производство, монтаж и обслуживание блочно-модульных, крышных и отдельностоящих котельных, систем отопления.<br><br>Работаем в строгом соответствии с нормативными документами, неукоснительно соблюдаем отечественные и зарубежные стандарты качества, безопасности.</p>
-            </div>
-        </div>
-        <div class="products__pluses">
-            <div class="products__info-text products__pluses-text">
-                <p class="products__info-text--title">Инженер-Комплект</p>
-                <p class="products__info-text--desc">В основе деятельности Инженер-комплект лежит комплексный подход, направленный на оказание наиболее полного спектра услуг для заказчика. Мы не просто предлагаем к продаже оборудование, мы обеспечиваем грамотный выбор систем отопления, водоснабжения, канализации с учетом особенностей того или иного объекта, будь то промышленное здание, многоквартирный дом или котедж.</p>
-            </div>
-            <div class="products__pluses-items">
-                <div class="pluses__item wow animate__animated animate__bounceInUp">
-                    <img src="img/quality.png" alt="" class="pluses__item-image">
-                    <p class="pluses__item-text">Качественные материалы</p>
+        <div class="card__buys">
+            <p class="card__buys-title">С этим товаром покупают</p>
+            <div class="card__buys-products">
+                <div class="products__item">
+                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
+                        <div class="products__image-field">
+                            <img src="img/barrel.jpg" alt="Фото - название товара" class="products__item-image">
+                        </div>
+                        <div class="product--link">
+                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                            <div class="products__item-info">
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Бренд:</p>
+                                    <p class="info__item-value">ACV</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Мощность (кВт):</p>
+                                    <p class="info__item-value">90.5</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Тип установки:</p>
+                                    <p class="info__item-value">напольный</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="products__bots">
+                        <div class="products__item-col">
+                            <p class="products__item-col--status status--ok">В наличии</p>
+                            <div class="products__item-col--change">
+                                <div class="col__price">
+                                    <img src="img/minus.svg" alt="" class="col__change-minus">
+                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                                    <img src="img/plus.svg" alt="" class="col__change-plus">
+                                </div>
+                                <p class="products__item-price">250 000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="products__item-buttons">
+                            <a class="products__item-buttons--buy">Купить</a>
+                            <a class="products__item-buttons--click">В 1 клик</a>
+                        </div>
+                    </div>
+                    <p class="products__item-status new">Новинка</p>
                 </div>
-                <div class="pluses__item wow animate__animated animate__bounceInUp">
-                    <img src="img/guys.png" alt="" class="pluses__item-image">
-                    <p class="pluses__item-text">Профессиональная команда</p>
+                <div class="products__item">
+                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
+                        <div class="products__image-field">
+                            <img src="img/water_set.jpg" alt="Фото - название товара" class="products__item-image">
+                        </div>
+                        <div class="product--link">
+                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                            <div class="products__item-info">
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Бренд:</p>
+                                    <p class="info__item-value">ACV</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Мощность (кВт):</p>
+                                    <p class="info__item-value">90.5</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Тип установки:</p>
+                                    <p class="info__item-value">напольный</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="products__bots">
+                        <div class="products__item-col">
+                            <p class="products__item-col--status status--ok">В наличии</p>
+                            <div class="products__item-col--change">
+                                <div class="col__price">
+                                    <img src="img/minus.svg" alt="" class="col__change-minus">
+                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                                    <img src="img/plus.svg" alt="" class="col__change-plus">
+                                </div>
+                                <p class="products__item-price">250 000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="products__item-buttons">
+                            <a class="products__item-buttons--buy">Купить</a>
+                            <a class="products__item-buttons--click">В 1 клик</a>
+                        </div>
+                    </div>
+                    <p class="products__item-status action">Акция</p>
                 </div>
-                <div class="pluses__item wow animate__animated animate__bounceInUp">
-                    <img src="img/bag.png" alt="" class="pluses__item-image">
-                    <p class="pluses__item-text">Комплексный подход</p>
+                <div class="products__item">
+                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
+                        <div class="products__image-field">
+                            <img src="img/instrument.jpg" alt="Фото - название товара" class="products__item-image">
+                        </div>
+                        <div class="product--link">
+                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                            <div class="products__item-info">
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Бренд:</p>
+                                    <p class="info__item-value">ACV</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Мощность (кВт):</p>
+                                    <p class="info__item-value">90.5</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Тип установки:</p>
+                                    <p class="info__item-value">напольный</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="products__bots">
+                        <div class="products__item-col">
+                            <p class="products__item-col--status status--ok">В наличии</p>
+                            <div class="products__item-col--change">
+                                <div class="col__price">
+                                    <img src="img/minus.svg" alt="" class="col__change-minus">
+                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                                    <img src="img/plus.svg" alt="" class="col__change-plus">
+                                </div>
+                                <p class="products__item-price">250 000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="products__item-buttons">
+                            <a class="products__item-buttons--buy">Купить</a>
+                            <a class="products__item-buttons--click">В 1 клик</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="pluses__item wow animate__animated animate__bounceInUp">
-                    <img src="img/guard.png" alt="" class="pluses__item-image">
-                    <p class="pluses__item-text">Надежная система</p>
+                <div class="products__item">
+                    <a href="" title="Подробнее о *Название товара*" class="products__item-full">
+                        <div class="products__image-field">
+                            <img src="img/instrument.jpg" alt="Фото - название товара" class="products__item-image">
+                        </div>
+                        <div class="product--link">
+                            <p class="products__item-name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                            <div class="products__item-info">
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Бренд:</p>
+                                    <p class="info__item-value">ACV</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Мощность (кВт):</p>
+                                    <p class="info__item-value">90.5</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Тип установки:</p>
+                                    <p class="info__item-value">напольный</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="products__bots">
+                        <div class="products__item-col">
+                            <p class="products__item-col--status status--ok">В наличии</p>
+                            <div class="products__item-col--change">
+                                <div class="col__price">
+                                    <img src="img/minus.svg" alt="" class="col__change-minus">
+                                    <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                                    <img src="img/plus.svg" alt="" class="col__change-plus">
+                                </div>
+                                <p class="products__item-price">250 000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="products__item-buttons">
+                            <a class="products__item-buttons--buy">Купить</a>
+                            <a class="products__item-buttons--click">В 1 клик</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -813,7 +872,7 @@
 <footer class="footer">
     <div class="footer--wrap">
         <div class="footer__logo">
-                <a class="footer__logo-link" href="index.html"><img src="img/logo.svg" alt="" class="footer__logo-image"></a>
+            <a class="footer__logo-link" href="index.html"><img src="img/logo.svg" alt="" class="footer__logo-image"></a>
             <p class="footer__logo-text">© Инженер-Комплект 2000 – 2022</p>
         </div>
         <nav class="footer__nav">
@@ -911,18 +970,17 @@
     </div>
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/noUiSlider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/burger.js"></script>
 <script src="js/header.js"></script>
 <script src="js/catalog.js"></script>
-<script src="js/slider.js"></script>
 <script src="js/products.js"></script>
+<script src="js/rangeFilter.js"></script>
+<script src="js/hiddenFilter.js"></script>
 <script src="js/inputValidation.js"></script>
-<script>
-    new WOW().init()
-</script>
+<script src="js/selectChecker.js"></script>
+<script src="js/selectSearch.js"></script>
+<script src="js/lineTab.js"></script>
 </body>
 </html>

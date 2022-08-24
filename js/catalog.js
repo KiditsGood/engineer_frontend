@@ -36,6 +36,15 @@ $('.catalog--flex').click(function () {
        $('.catalog--toggle').hide(400)
        $('.catalog--flex').removeClass('catalog__item-active')
 
+       $(document).mouseup(function (e) {
+           let catalogItem = $('.catalog--toggle')
+
+           if ( !catalogItem.is(e.target) && catalogItem.has(e.target).length === 0) {
+               catalogItem.hide(400)
+               $('.catalog--flex').removeClass('catalog__item-active')
+           }
+       })
+
        if ($(this.lastElementChild).css('display') == 'block') {
 
            $(this).removeClass('catalog__item-active')

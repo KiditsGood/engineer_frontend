@@ -71,3 +71,6 @@
 .icon-:before {
   content: "\6b";
 }
+.icon--1:before {
+  content: "\6c";
+}

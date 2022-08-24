@@ -35,11 +35,12 @@ $('.products__item-buttons--buy').each(function () {
     let productItem = $(this)
 
     productItem.click(function () {
-        if (productItem.text() == 'Купить') {
-            productItem.html('В корзине')
-        }
-        else {
+        productItem.html('В корзине')
+        productItem.addClass('product--cart--active')
+
+        setTimeout(function () {
             productItem.html('Купить')
-        }
+            productItem.removeClass('product--cart--active')
+        }, 2000)
     })
 })
