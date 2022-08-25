@@ -8,5 +8,6 @@
     <orderEntry type="library" name="noUiSlider" level="application" />
     <orderEntry type="library" name="jquery-modal" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="jquery.maskedinput" level="application" />
   </component>
 </module>

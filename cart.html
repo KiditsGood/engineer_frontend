@@ -16,7 +16,7 @@
     <div class="header__wrap">
         <div class="header__wrap-top mobile__nav">
             <div class="header--city">
-                <a href="" class="header__nav-city">Воронеж</a>
+                <a class="header__nav-city">Воронеж</a>
                 <nav class="header__nav mobile__nav-field">
                     <a class="header__nav-item">Каталог</a>
                     <a href="" class="header__nav-item">Акции</a>
@@ -99,7 +99,7 @@
             </a>
             <div class="header__search">
                 <input type="text" class="header__search-input" placeholder="Поиск по сайту">
-                <img src="img/search_icon.svg" alt="" class="header__search-icon">
+                <img src="img/search.svg" alt="" class="header__search-icon">
             </div>
             <div class="header__buttons">
                 <div class="header__buttons-item header__buttons-item--drop">
@@ -114,6 +114,53 @@
             </div>
             <a class="mobile__phone-link" href="tel: +7 (473) 280-23-23"><i class="header__social-phone--icon mobile__phone icon-phone-ico"></i></a>
         </div>
+    </div>
+    <div id="map">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8019d2e9acf02d092dced774a444b0a92aea85a21841a5f02ec8ce4e6109ec5b&amp;source=constructor" width="800" height="600" frameborder="0"></iframe>
+    </div>
+    <div id="login">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <form class="login__form">
+            <p class="login__form-title">Войти в личный кабинет</p>
+            <input type="email" class="login__form-input" placeholder="Логин (Ваш Email)">
+            <input type="password" class="login__form-input" placeholder="Пароль">
+            <p class="login__form-reset">Забыл пароль</p>
+            <button type="submit" class="login__form-button">Войти</button>
+            <button type="button" class="login__form-button">Зарегистрироваться</button>
+        </form>
+    </div>
+    <div id="registration">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <form class="login__form">
+            <p class="login__form-title">Регистрация</p>
+            <input type="text" class="login__form-input" placeholder="Ф.И.О">
+            <input type="email" class="login__form-input" placeholder="E-mail">
+            <input type="tel" class="login__form-input" placeholder="Телефон">
+            <input type="password" class="login__form-input" placeholder="Пароль">
+            <input type="password" class="login__form-input" placeholder="Повторите пароль">
+            <button type="submit" class="login__form-button">Отправить</button>
+        </form>
+    </div>
+    <div id="reset">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <form class="login__form">
+            <p class="login__form-title">Восстановить пароль</p>
+            <input type="email" class="login__form-input" placeholder="E-mail">
+            <button type="submit" class="login__form-button">Отправить</button>
+        </form>
     </div>
 </header>
 <main class="wrapper">
@@ -320,9 +367,18 @@
     <section class="cart">
         <h1 class="cart__title">Корзина</h1>
         <div class="cart__products">
+            <div class="cart__clear">
+                <div class="cart__clear-close">
+                    <div class="cart__clear-close--peace"></div>
+                    <div class="cart__clear-close--peace"></div>
+                </div>
+                <p class="cart__clear-text">Очистить корзину</p>
+            </div>
             <div class="cart__products-item">
                 <a class="cart__link">
-                    <img src="img/" alt="" class="cart__link-image">
+                    <div class="cart__link-image">
+                        <img src="img/instrument.jpg" alt="" class="cart__link-image--product">
+                    </div>
                     <div class="cart__link-info">
                         <p class="cart__link-info--title">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
                         <div class="cart__link-info--desc">
@@ -343,20 +399,135 @@
                             <p class="desc__price">250 000 ₽</p>
                         </div>
                     </div>
-                    <div class="cart__link-change">
-                        <div class="cart__link-change--close">
-                            <span></span>
-                            <span></span>
+                </a>
+                <div class="cart__link-change">
+                    <div class="cart__link-change--close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p class="products__item-col--status status--ok">В наличии</p>
+                    <div class="cart__link-change--col">
+                        <div class="col__price cart__price">
+                            <img src="img/minus.svg" alt="" class="col__change-minus">
+                            <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                            <img src="img/plus.svg" alt="" class="col__change-plus">
                         </div>
-                        <p class="cart__link-change--status">В наличии</p>
-                        <div class="cart__link-change--col">
-                            <div class="col">
-
+                        <p class="full--price">250 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__products-item">
+                <a class="cart__link">
+                    <div class="cart__link-image">
+                        <img src="img/instrument.jpg" alt="" class="cart__link-image--product">
+                    </div>
+                    <div class="cart__link-info">
+                        <p class="cart__link-info--title">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                        <div class="cart__link-info--desc">
+                            <div class="desc__chars">
+                                <div class="desc__chars-item">
+                                    <p class="desc__chars-item--name">Бренд:</p>
+                                    <p class="desc__chars-item--value">ACV</p>
+                                </div>
+                                <div class="desc__chars-item">
+                                    <p class="desc__chars-item--name">Мощность (кВт):</p>
+                                    <p class="desc__chars-item--value">90.5</p>
+                                </div>
+                                <div class="desc__chars-item">
+                                    <p class="desc__chars-item--name">Тип установки:</p>
+                                    <p class="desc__chars-item--value">напольный</p>
+                                </div>
                             </div>
-                            <p class="full--price">250 000 ₽</p>
+                            <p class="desc__price">250 000 ₽</p>
                         </div>
                     </div>
                 </a>
+                <div class="cart__link-change">
+                    <div class="cart__link-change--close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p class="products__item-col--status status--ok">В наличии</p>
+                    <div class="cart__link-change--col">
+                        <div class="col__price cart__price">
+                            <img src="img/minus.svg" alt="" class="col__change-minus">
+                            <input class="col__change-number" value="1" max="999" min="1" minlength="1" maxlength="3">
+                            <img src="img/plus.svg" alt="" class="col__change-plus">
+                        </div>
+                        <p class="full--price">250 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__form">
+            <form class="cart__form-field">
+                <div class="form__item">
+                    <p class="form__item-name">Ваши данные</p>
+                    <div class="form__item-inputs">
+                        <div class="form__item-inputs--item">
+                            <div class="input__item">
+                                <p class="input__item-name">Имя</p>
+                                <input type="text" class="input__item-field" placeholder="ФИО">
+                            </div>
+                            <div class="input__item">
+                                <p class="input__item-name">Телефон</p>
+                                <input type="tel" class="input__item-field" placeholder="Номер телефона">
+                            </div>
+                        </div>
+                        <div class="form__item-inputs--item">
+                            <div class="input__item">
+                                <p class="input__item-name">Email</p>
+                                <input type="email" class="input__item-field" placeholder="Электронная почта">
+                            </div>
+                            <a class="already--button">Я уже зарегистрирован</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <p class="form__item-name">Доставка</p>
+                    <div class="form__item-inputs">
+                        <div class="form__item-inputs--item">
+                            <div class="input__item">
+                                <p class="input__item-name">Способ получения</p>
+                                <div class="input__item-field">
+                                    <p class="input__item-field--current">Доставка по России</p>
+                                    <input type="hidden" class="current--hidden">
+                                </div>
+                            </div>
+                            <div class="input__item">
+                                <p class="input__item-name">Трансортная компания <a class="input__item-help">Условия доставки</a></p>
+                                <div class="input__item-field">
+                                    <p class="input__item-field--current">СДЭК</p>
+                                    <input type="hidden" class="current--hidden">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item-inputs--item">
+                            <div class="input__item">
+                                <p class="input__item-name">Адрес доставки</p>
+                                <input type="text" class="input__item-field" placeholder="Адрес">
+                            </div>
+                        </div>
+                        <div class="form__item-inputs--item">
+                            <div class="input__item">
+                                <p class="input__item-name">Комментарий к заказу</p>
+                                <textarea class="input__item-field" cols="10" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="sum">
+        <div class="sum--wrap">
+            <div class="sum__value">
+                <p class="sum__value-name">Сумма заказа:</p>
+                <p class="sum__value-price">500 000 ₽</p>
+            </div>
+            <div class="sum__check">
+                <p class="sum__check-personality">Нажимая кнопку, Вы даёте своё согласие на обработку <a class="sum__check-link">персональных данных</a></p>
+                <button type="button" class="sum__check-button">Оформить заказ</button>
             </div>
         </div>
     </section>
@@ -458,7 +629,7 @@
         <img src="img/cabinet.svg" alt="" class="mobile__bot-item--image">
         <p class="mobile__bot-item--text">Кабинет</p>
     </div>
-    <div class="mobile__bot-item">
+    <div class="mobile__bot-item" onclick="location.href = 'cart.html'">
         <img src="img/cart.svg" alt="" class="mobile__bot-item--image">
         <p class="mobile__bot-item--text">Корзина</p>
     </div>
@@ -466,6 +637,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/burger.js"></script>
@@ -474,6 +646,8 @@
 <script src="js/slider.js"></script>
 <script src="js/products.js"></script>
 <script src="js/inputValidation.js"></script>
+<script src="js/headerModal.js"></script>
+<script src="js/maskPhone.js"></script>
 <script>
     new WOW().init()
 </script>

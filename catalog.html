@@ -16,7 +16,7 @@
     <div class="header__wrap">
         <div class="header__wrap-top mobile__nav">
             <div class="header--city">
-                <a href="" class="header__nav-city">Воронеж</a>
+                <a class="header__nav-city">Воронеж</a>
                 <nav class="header__nav mobile__nav-field">
                     <a class="header__nav-item">Каталог</a>
                     <a href="" class="header__nav-item">Акции</a>
@@ -99,7 +99,7 @@
             </a>
             <div class="header__search">
                 <input type="text" class="header__search-input" placeholder="Поиск по сайту">
-                <img src="img/search_icon.svg" alt="" class="header__search-icon">
+                <img src="img/search.svg" alt="" class="header__search-icon">
             </div>
             <div class="header__buttons">
                 <div class="header__buttons-item header__buttons-item--drop">
@@ -114,6 +114,53 @@
             </div>
             <a class="mobile__phone-link" href="tel: +7 (473) 280-23-23"><i class="header__social-phone--icon mobile__phone icon-phone-ico"></i></a>
         </div>
+    </div>
+    <div id="map">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8019d2e9acf02d092dced774a444b0a92aea85a21841a5f02ec8ce4e6109ec5b&amp;source=constructor" width="800" height="600" frameborder="0"></iframe>
+    </div>
+    <div id="login">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <form class="login__form">
+            <p class="login__form-title">Войти в личный кабинет</p>
+            <input type="email" class="login__form-input" placeholder="Логин (Ваш Email)">
+            <input type="password" class="login__form-input" placeholder="Пароль">
+            <p class="login__form-reset">Забыл пароль</p>
+            <button type="submit" class="login__form-button">Войти</button>
+            <button type="button" class="login__form-button">Зарегистрироваться</button>
+        </form>
+    </div>
+    <div id="registration">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <form class="login__form">
+            <p class="login__form-title">Регистрация</p>
+            <input type="text" class="login__form-input" placeholder="Ф.И.О">
+            <input type="email" class="login__form-input" placeholder="E-mail">
+            <input type="tel" class="login__form-input" placeholder="Телефон">
+            <input type="password" class="login__form-input" placeholder="Пароль">
+            <input type="password" class="login__form-input" placeholder="Повторите пароль">
+            <button type="submit" class="login__form-button">Отправить</button>
+        </form>
+    </div>
+    <div id="reset">
+        <a href="" rel="modal:close" class="product--modal--close">
+            <span></span>
+            <span></span>
+        </a>
+        <form class="login__form">
+            <p class="login__form-title">Восстановить пароль</p>
+            <input type="email" class="login__form-input" placeholder="E-mail">
+            <button type="submit" class="login__form-button">Отправить</button>
+        </form>
     </div>
 </header>
 <main class="wrapper">
@@ -599,6 +646,7 @@
                             </div>
                         </div>
                     </a>
+                    <p class="products__item-status top">ТОП продаж</p>
                     <div class="products__bots">
                         <div class="products__item-col">
                             <p class="products__item-col--status status--ok">В наличии</p>
@@ -613,47 +661,8 @@
                         </div>
                         <div class="products__item-buttons">
                             <a class="products__item-buttons--buy">Купить</a>
-                            <a href="#product--modal" rel="modal:open" class="products__item-buttons--click">В 1 клик</a>
+                            <a class="products__item-buttons--click">В 1 клик</a>
                         </div>
-                    </div>
-                    <p class="products__item-status top">ТОП продаж</p>
-                    <div id="product--modal">
-                        <a href="" rel="modal:close" class="product--modal--close">
-                            <span></span>
-                            <span></span>
-                        </a>
-                        <form class="product__click">
-                            <p class="product__click-title">Купить в один клик</p>
-                            <div class="product__click-item">
-                                <img src="img/icecube.png" alt="Фото - название товара" class="product__click-item--image">
-                                <div class="product__click-item--info">
-                                    <p class="products__item-name products__click-item--name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
-                                    <div class="products__item-info--item">
-                                        <p class="info__item-set">Бренд:</p>
-                                        <p class="info__item-value">ACV</p>
-                                    </div>
-                                    <div class="products__item-info--item">
-                                        <p class="info__item-set">Мощность (кВт):</p>
-                                        <p class="info__item-value">90.5</p>
-                                    </div>
-                                    <div class="products__item-info--item">
-                                        <p class="info__item-set">Тип установки:</p>
-                                        <p class="info__item-value">напольный</p>
-                                    </div>
-                                    <div class="product__click-item--price">
-                                        <p class="click__price-col">Количество: <span class="price__col-thin">1</span></p>
-                                        <p class="click__price-value">Общая стоимость: <span class="price__col-thin">250 000 ₽</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product__click-top">
-                                <input type="text" class="product__click-top--input" placeholder="Имя">
-                                <input type="text" class="product__click-top--input" placeholder="E-mail">
-                                <input type="text" class="product__click-top--input" placeholder="Телефон">
-                            </div>
-                            <textarea name="" id="" cols="20" rows="2" class="product__click-top--input" placeholder="Дополнительная информация"></textarea>
-                            <button class="product__click-button" type="submit">Купить</button>
-                        </form>
                     </div>
                 </div>
                 <div class="products__item">
@@ -679,6 +688,7 @@
                             </div>
                         </div>
                     </a>
+                    <p class="products__item-status new">Новинка</p>
                     <div class="products__bots">
                         <div class="products__item-col">
                             <p class="products__item-col--status status--ok">В наличии</p>
@@ -696,7 +706,6 @@
                             <a class="products__item-buttons--click">В 1 клик</a>
                         </div>
                     </div>
-                    <p class="products__item-status new">Новинка</p>
                 </div>
                 <div class="products__item">
                     <a href="" title="Подробнее о *Название товара*" class="products__item-full">
@@ -721,6 +730,7 @@
                             </div>
                         </div>
                     </a>
+                    <p class="products__item-status action">Акция</p>
                     <div class="products__bots">
                         <div class="products__item-col">
                             <p class="products__item-col--status status--ok">В наличии</p>
@@ -738,7 +748,6 @@
                             <a class="products__item-buttons--click">В 1 клик</a>
                         </div>
                     </div>
-                    <p class="products__item-status action">Акция</p>
                 </div>
                 <div class="products__item">
                     <a href="" title="Подробнее о *Название товара*" class="products__item-full">
@@ -986,6 +995,44 @@
                         </div>
                     </div>
                 </div>
+                <div id="product--modal">
+                    <a href="" rel="modal:close" class="product--modal--close">
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <form class="product__click">
+                        <p class="product__click-title">Купить в один клик</p>
+                        <div class="product__click-item">
+                            <img src="img/icecube.png" alt="Фото - название товара" class="product__click-item--image">
+                            <div class="product__click-item--info">
+                                <p class="products__item-name products__click-item--name">Котел настенный Ariston CARES XC 24 FF NG 24кВт (3301682)</p>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Бренд:</p>
+                                    <p class="info__item-value">ACV</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Мощность (кВт):</p>
+                                    <p class="info__item-value">90.5</p>
+                                </div>
+                                <div class="products__item-info--item">
+                                    <p class="info__item-set">Тип установки:</p>
+                                    <p class="info__item-value">напольный</p>
+                                </div>
+                                <div class="product__click-item--price">
+                                    <p class="click__price-col">Количество: <span class="price__col-thin">1</span></p>
+                                    <p class="click__price-value">Общая стоимость: <span class="price__col-thin">250 000 ₽</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__click-top">
+                            <input type="text" class="product__click-top--input" placeholder="Имя">
+                            <input type="text" class="product__click-top--input" placeholder="E-mail">
+                            <input type="text" class="product__click-top--input" placeholder="Телефон">
+                        </div>
+                        <textarea name="" id="" cols="20" rows="2" class="product__click-top--input" placeholder="Дополнительная информация"></textarea>
+                        <button class="product__click-button" type="submit">Купить</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -1087,7 +1134,7 @@
         <img src="img/cabinet.svg" alt="" class="mobile__bot-item--image">
         <p class="mobile__bot-item--text">Кабинет</p>
     </div>
-    <div class="mobile__bot-item">
+    <div class="mobile__bot-item" onclick="location.href = 'cart.html'">
         <img src="img/cart.svg" alt="" class="mobile__bot-item--image">
         <p class="mobile__bot-item--text">Корзина</p>
     </div>
@@ -1095,6 +1142,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/noUiSlider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script src="js/burger.js"></script>
 <script src="js/header.js"></script>
 <script src="js/catalog.js"></script>
@@ -1105,5 +1153,8 @@
 <script src="js/selectChecker.js"></script>
 <script src="js/selectSearch.js"></script>
 <script src="js/lineTab.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/headerModal.js"></script>
+<script src="js/maskPhone.js"></script>
 </body>
 </html>
