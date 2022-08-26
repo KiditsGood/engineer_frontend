@@ -1,5 +1,5 @@
 $('.history__desc-open').click(function () {
-    let historyToggle = $(this).parent().next()
+    let historyToggle = $(this).parent().parent().next()
     let historyArrow = $(this)
 
     $('.history__toggle').slideUp('slow')
@@ -35,4 +35,18 @@ $('.cabinet__field-tabs--item:last-child').click(function (){
     $('.cabinet__field-history').css({
         display: 'none'
     })
+})
+
+$('.cabinet__field-history--desc').click(function () {
+    if ($(window).width() < 1000) {
+        let tableToggle = $(this.lastElementChild)
+        $('.history__toggle').slideUp('slow')
+
+        if (tableToggle.css('display') == 'block') {
+            tableToggle.slideUp('slow')
+        }
+        else {
+            tableToggle.slideDown('slow')
+        }
+    }
 })

@@ -18,4 +18,3 @@ $('.mobile__bot-item').click(function () {
         $(this).addClass('mobile__bot-item--active').siblings().removeClass('mobile__bot-item--active')
     }
 })
-

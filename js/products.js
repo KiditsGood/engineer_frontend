@@ -44,3 +44,17 @@ $('.products__item-buttons--buy').each(function () {
         }, 2000)
     })
 })
+
+$('.card__buy-buttons_buy').each(function () {
+    let productItem = $(this)
+
+    productItem.click(function () {
+        productItem.html('Добавлено')
+        productItem.addClass('product--cart--active')
+
+        setTimeout(function () {
+            productItem.html('В корзину')
+            productItem.removeClass('product--cart--active')
+        }, 2000)
+    })
+})
