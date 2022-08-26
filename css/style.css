@@ -1533,6 +1533,7 @@ label:hover{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width: 100%;
 }
 .card__options{
     display: flex;
@@ -1580,7 +1581,7 @@ label:hover{
     line-height: 20px;
     background: linear-gradient(90deg, #FC8916 0%, #FDA736 100%), #FC8916;
     color: white;
-    width: 147px;
+    width: 100%;
     height: 51px;
     display: flex;
     align-items: center;
@@ -1594,7 +1595,7 @@ label:hover{
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
-    width: 208px;
+    width: 100%;
     height: 47px;
     color: #8D90A4;
     outline: 2px solid #E2E4F0;
@@ -2487,6 +2488,18 @@ input:focus, textarea:focus{
 .product--cart--active:hover{
     background: linear-gradient(90deg, #5AB752 0%, #249F53 46.35%, #31C27C 100%);
 }
+.delivery--item{
+    display: none;
+}
+.delivery--address{
+    display: none;
+}
+.address--item--check{
+    width: 100%;
+}
+.address--item--check:hover{
+    cursor: default;
+}
 
 @media screen and (max-width: 1279px){
     .history__main:last-child, .history__desc:nth-child(5){
@@ -3073,6 +3086,7 @@ input:focus, textarea:focus{
     .cart__link-change--col{
         width: 100%;
         justify-content: space-between;
+        margin-top: 38px;
     }
     .cart__link-info{
         gap: 0;
@@ -3080,12 +3094,12 @@ input:focus, textarea:focus{
     .desc__price{
         position: absolute;
         left: 0;
-        top: 85px;
+        top: 111px;
     }
     .cart__link-info--title{
-        width: 80%;
-        font-size: 14px;
-        line-height: 16px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 14px;
     }
     .cart__products{
         padding: 10px;
@@ -3095,6 +3109,7 @@ input:focus, textarea:focus{
     }
     .cart__form{
         padding: 20px 10px;
+        margin-bottom: 100px;
     }
     .form__item{
         gap: 20px;
@@ -3260,5 +3275,13 @@ input:focus, textarea:focus{
         align-items: center;
         justify-content: center;
         transition: 0.2s;
+    }
+    .cart__link-change > .products__item-col--status{
+        position: absolute;
+        left: 0;
+        bottom: 35px;
+    }
+    .cart__price{
+        margin-left: 105px;
     }
 }

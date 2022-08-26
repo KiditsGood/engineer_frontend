@@ -490,7 +490,7 @@
                         <div class="form__item-inputs--item">
                             <div class="input__item">
                                 <p class="input__item-name">Способ получения</p>
-                                <div class="sort__input-field cart--select">
+                                <div class="sort__input-field cart--select cart--switcher">
                                     <div class="sort--flex">
                                         <p class="sort__input-filed--text">Самовывоз</p>
                                         <i class="sort__input-field--arrow icon-"></i>
@@ -504,7 +504,7 @@
                                 </div>
                                 <input class="sort__input-value" type="hidden" value="self">
                             </div>
-                            <div class="input__item">
+                            <div class="input__item delivery--item">
                                 <p class="input__item-name">Транспортная компания <a class="input__item-help">Условия доставки</a></p>
                                 <div class="sort__input-field cart--select">
                                     <div class="sort--flex">
@@ -521,8 +521,19 @@
                                 </div>
                                 <input class="sort__input-value" type="hidden" value="cdec">
                             </div>
+                            <div class="input__item address--item">
+                                <p class="input__item-name">Адрес получения</p>
+                                <div class="sort__input-field address--item--check">
+                                    <div class="sort--flex">
+                                        <p class="sort__input-filed--text">г. Воронеж, ул. Ломоносова, 117</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form__item-inputs--item">
+                        <div class="cart--map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afd11ff64e88491328d8146844dbf04a09f142840727fa65fe01b0ffb1ed0321b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                        </div>
+                        <div class="form__item-inputs--item delivery--address">
                             <div class="input__item">
                                 <p class="input__item-name">Адрес доставки</p>
                                 <input type="text" class="input__item-field" placeholder="Адрес">
@@ -673,6 +684,7 @@
 <script src="js/maskPhone.js"></script>
 <script src="js/cartChecker.js"></script>
 <script src="js/mobileSearch.js"></script>
+<script src="js/cartSwitcher.js"></script>
 <script>
     new WOW().init()
 </script>
