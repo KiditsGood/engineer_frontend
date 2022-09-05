@@ -50,3 +50,14 @@ $('.cabinet__field-history--desc').click(function () {
         }
     }
 })
+
+$('.data__item-change').click(function () {
+    if ($('.data__item-next--text').attr('readonly')) {
+        $('.data__item-next--text').removeAttr('readonly')
+        $(this).text('Сохранить')
+    }
+    else {
+        $('.data__item-next--text').attr('readonly', '')
+        $(this).text('Редактировать')
+    }
+})

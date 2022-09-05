@@ -100,7 +100,7 @@
             </a>
             <div class="header__search">
                 <input type="text" class="header__search-input" placeholder="Поиск по сайту">
-                <img src="img/search.svg" alt="" class="header__search-icon">
+                <img src="img/search_icon.svg" alt="" class="header__search-icon">
             </div>
             <div class="header__buttons">
                 <div class="header__buttons-item header__buttons-item--drop">
@@ -463,7 +463,11 @@
         <div class="cart__form">
             <form class="cart__form-field">
                 <div class="form__item">
-                    <p class="form__item-name">Ваши данные</p>
+                    <div class="form__top">
+                        <p class="form__item-name">Ваши данные</p>
+                        <a class="already--button">Я уже зарегистрирован</a>
+                    </div>
+
                     <div class="form__item-inputs">
                         <div class="form__item-inputs--item">
                             <div class="input__item">
@@ -474,13 +478,10 @@
                                 <p class="input__item-name">Телефон</p>
                                 <input type="tel" class="input__item-field" placeholder="Номер телефона">
                             </div>
-                        </div>
-                        <div class="form__item-inputs--item">
                             <div class="input__item">
                                 <p class="input__item-name">Email</p>
                                 <input type="email" class="input__item-field" placeholder="Электронная почта">
                             </div>
-                            <a class="already--button">Я уже зарегистрирован</a>
                         </div>
                     </div>
                 </div>
@@ -542,24 +543,24 @@
                         <div class="form__item-inputs--item">
                             <div class="input__item">
                                 <p class="input__item-name">Комментарий к заказу</p>
-                                <textarea class="input__item-field" cols="10" rows="5"></textarea>
+                                <textarea class="input__item-field" cols="10" rows="4"></textarea>
                             </div>
                         </div>
+                        <section class="sum">
+                            <div class="sum--wrap">
+                                <div class="sum__value">
+                                    <p class="sum__value-name">Сумма заказа:</p>
+                                    <p class="sum__value-price">500 000 ₽</p>
+                                </div>
+                                <div class="sum__check">
+                                    <p class="sum__check-personality">Нажимая кнопку, Вы даёте своё согласие на обработку <a class="sum__check-link">персональных данных</a></p>
+                                    <button type="button" class="sum__check-button">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </form>
-        </div>
-    </section>
-    <section class="sum">
-        <div class="sum--wrap">
-            <div class="sum__value">
-                <p class="sum__value-name">Сумма заказа:</p>
-                <p class="sum__value-price">500 000 ₽</p>
-            </div>
-            <div class="sum__check">
-                <p class="sum__check-personality">Нажимая кнопку, Вы даёте своё согласие на обработку <a class="sum__check-link">персональных данных</a></p>
-                <button type="button" class="sum__check-button">Оформить заказ</button>
-            </div>
         </div>
     </section>
     <img src="img/first_abs.png" alt="" class="abs__image-left">
@@ -653,7 +654,7 @@
         <p class="mobile__bot-item--text">Акции</p>
     </div>
     <div class="mobile__bot-item">
-        <img src="img/search.svg" alt="" class="mobile__bot-item--image">
+        <img src="img/search_icon.svg" alt="" class="mobile__bot-item--image">
         <p class="mobile__bot-item--text">Поиск</p>
     </div>
     <div class="mobile__bot-item">
@@ -685,6 +686,7 @@
 <script src="js/cartChecker.js"></script>
 <script src="js/mobileSearch.js"></script>
 <script src="js/cartSwitcher.js"></script>
+<script src="js/cartScroll.js"></script>
 <script>
     new WOW().init()
 </script>
